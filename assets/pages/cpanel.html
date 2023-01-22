@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/login.js"></script>
+    <script src="../js/game.js"></script>
+    <title>TaraLaro: Rent Games, Play More!</title>
+</head>
+<body>
+    <div class=" p-0" style="height: 100vh;background-color: #ECEBE9;">
+      <header>
+        <nav class="navbar navbar-dark bg-dark bg-gradient navbar-expand-lg shadow">
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bolder text-decoration-none text-light" href="../../index.html#carouselHero">🎮TaraLaro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="../../index.html#carouselHero">Home</a>
+                <a class="nav-link" href="../../index.html#faq">FAQ</a>
+                <a class="nav-link" href="../../index.html#anchorPlans">Plans</a>
+                <a class="nav-link" href="../../index.html#anchorTestimonials">Testimonials</a>
+                <a class="nav-link" href="./game.html">Game List</a>
+                <a class="nav-link" href="./about.html">About</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
+                <a class="nav-link login-icon" aria-current="page" href="./login.html" title="Login or Signup">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg></a>
+                <a class="nav-link login-nav" aria-current="page" href="./assets/pages/login.html">Login | Signup</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+        <main>
+          <button class="btn btn-danger" onclick="logout()">logout</button>
+          <button class="btn btn-secondary">Settings</button>
+          <main class="custom-width">
+            <div class="row d-flex justify-content-evenly p-3">
+              <div class="card col-md-4 gamecard">
+                <img src="../img/gamesdb/1.jpg" class="card-img-top pt-2">
+                <div class="card-body">
+                  <h5 class="card-title">Crash Bandicoot</h5>
+                  <p class="card-text">Genre: Action, Adventure</p>
+                  <a href="#" class="btn btn-dark bg-gradient">Rent</a>
+                </div>
+              </div>
+              <div class="card col-md-4 gamecard">
+                <img src="../img/gamesdb/2.jpg" class="card-img-top pt-2">
+                <div class="card-body">
+                  <h5 class="card-title">Final Fantasy 7</h5>
+                  <p class="card-text">Genre: RPG, Role Playing Game</p>
+                  <a href="#" class="btn btn-dark bg-gradient">Rent</a>
+                </div>
+              </div>
+              <div class="card col-md-4 gamecard">
+                <img src="../img/gamesdb/3.jpg" class="card-img-top pt-2">
+                <div class="card-body">
+                  <h5 class="card-title">Final Fantasy XV</h5>
+                  <p class="card-text">Genre: RPG, Role Playing Game</p>
+                  <a href="#" class="btn btn-dark bg-gradient">Rent</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row d-flex justify-content-evenly p-3">
+              <div class="card col-md-4 gamecard">
+                <img src="../img/gamesdb/4.jpg" class="card-img-top pt-2">
+                <div class="card-body">
+                  <h5 class="card-title">God of War</h5>
+                  <p class="card-text">Genre: Action, Adventure, RPG</p>
+                  <a href="#" class="btn btn-dark bg-gradient">Rent</a>
+                </div>
+              </div>
+              <div class="card col-md-4 gamecard">
+                <img src="../img/gamesdb/5.jpg" class="card-img-top pt-2">
+                <div class="card-body">
+                  <h5 class="card-title">God of War: Ragnarok</h5>
+                  <p class="card-text">Genre: Action, Adventure, RPG</p>
+                  <a href="#" class="btn btn-dark bg-gradient">Rent</a>
+                </div>
+              </div>
+              <div class="card col-md-4 gamecard">
+                <img src="../img/gamesdb/6.jpg" class="card-img-top pt-2">
+                <div class="card-body">
+                  <h5 class="card-title">Horizon Zero Dawn</h5>
+                  <p class="card-text">Genre: Action, Adventure, RPG</p>
+                  <a href="#" class="btn btn-dark bg-gradient">Rent</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row d-flex justify-content-evenly p-3">
+              <div class="card col-md-4 gamecard">
+                <img src="../img/gamesdb/7.jpg" class="card-img-top pt-2">
+                <div class="card-body">
+                  <h5 class="card-title">Minecraft</h5>
+                  <p class="card-text">Genre: Sandbox, RPG</p>
+                  <a href="#" class="btn btn-dark bg-gradient">Rent</a>
+                </div>
+              </div>
+              <div class="card col-md-4 gamecard">
+                <img src="../img/gamesdb/8.jpg" class="card-img-top pt-2">
+                <div class="card-body">
+                  <h5 class="card-title">Spider-Man</h5>
+                  <p class="card-text">Genre: Action, Adventure</p>
+                  <a href="#" class="btn btn-dark bg-gradient">Rent</a>
+                </div>
+              </div>
+              <div class="card col-md-4 gamecard">
+                <img src="../img/gamesdb/9.jpeg" class="card-img-top pt-2">
+                <div class="card-body">
+                  <h5 class="card-title">Spider-Man: Miles Morales</h5>
+                  <p class="card-text">Genre: Action, Adventure</p>
+                  <a href="#" class="btn btn-dark bg-gradient">Rent</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row d-flex justify-content-evenly">
+              <div class="card col-md-4 gamecard">
+                <img src="../img/gamesdb/10.jpg" class="card-img-top pt-2">
+                <div class="card-body">
+                  <h5 class="card-title">Tony Hawk</h5>
+                  <p class="card-text">Genre: Sports, Skateboard</p>
+                  <a href="#" class="btn btn-dark bg-gradient">Rent</a>
+                </div>
+              </div>
+              <div class="card col-md-4 gamecard">
+                <img src="../img/gamesdb/11.jpg" class="card-img-top pt-2">
+                <div class="card-body">
+                  <h5 class="card-title">Watch Dogs</h5>
+                  <p class="card-text">Genre: Action, Adventure</p>
+                  <a href="#" class="btn btn-dark bg-gradient">Rent</a>
+                </div>
+              </div>
+              <div class="card col-md-4 gamecard">
+                <img src="../img/gamesdb/12.jpg" class="card-img-top pt-2">
+                <div class="card-body">
+                  <h5 class="card-title">Witcher 3</h5>
+                  <p class="card-text">Genre: RPG, Role Playing Game</p>
+                  <a href="#" class="btn btn-dark bg-gradient">Rent</a>
+                </div>
+              </div>
+            </div>            
+          </main>
+        </main>
+
+          <div class="footer-bottom text-center bg-dark text-light p-2 bg-gradient">
+            © <span id="copyright-year">2022</span> Copyright:
+            <a class="text-reset fw-bold" href="#carouselHero">TaraLaro</a>
+          </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+    </html>
